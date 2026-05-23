@@ -39,6 +39,8 @@ export default function Navbar() {
 
   const isHome = pathname === '/';
 
+  if (isHome) return null;
+
   return (
     <>
       <nav

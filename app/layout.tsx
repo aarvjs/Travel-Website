@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/layout/Navbar";
+import FloatingNavbar from "@/components/layout/FloatingNavbar";
 import Footer from "@/components/layout/Footer";
 import Preloader from "@/components/common/Preloader";
 import FloatingButtons from "@/components/common/FloatingButtons";
@@ -72,10 +72,15 @@ export default function RootLayout({
       className={`${inter.variable} ${playfair.variable}`}
       style={{ scrollBehavior: "smooth" }}
     >
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+      </head>
       <body style={{ fontFamily: "var(--font-inter, sans-serif)", overflowX: "hidden" }}>
         <Preloader />
         <SmoothScroll>
-          <Navbar />
+          <FloatingNavbar />
           <main>{children}</main>
           <Footer />
         </SmoothScroll>

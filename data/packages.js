@@ -124,7 +124,7 @@ export const packages = [
     id: 6,
     name: "Himalayan Manali Trek",
     destination: "Manali, India",
-    image: "https://images.unsplash.com/photo-1605649461684-65b54c6a24bf?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80",
     price: 599,
     originalPrice: 799,
     days: 5,
